@@ -1,9 +1,13 @@
 <?php
-error_reporting(0);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+// error_reporting(0);
 ob_start();
 session_start();
 include "config/koneksi.php";
 include "config/fungsi_alert.php";
+// include "/content.php";
+$module = isset($_GET['module']);
 ?>
 <!DOCTYPE html>
 <html><head>

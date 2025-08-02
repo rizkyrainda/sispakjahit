@@ -15,7 +15,7 @@ if (text_form.password.value == "")
 }
 return (true);
 }
--->
+
 </script>
 <!DOCTYPE html>
 <html lang="en" >

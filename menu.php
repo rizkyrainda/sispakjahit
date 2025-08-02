@@ -1,5 +1,5 @@
 <?php
-$module = $_GET['module'];
+$module = isset($_GET['module']);
 ?>
 <li><a <?php if ($module == "") echo 'class="active"'; ?> href="./"><i class="fa fa-home"></i> <span>Beranda</span></a><li>
   <div class="container"></div>

@@ -4,6 +4,9 @@ $username = "root";
 $password = "";
 $database = "sispakjahit";
 
-mysql_connect($server,$username,$password) or die("Koneksi gagal");
-mysql_select_db($database) or die("Maaf, Database tidak bisa dibuka");
+$koneksi = mysqli_connect($server, $username, $password, $database);
+
+if (!$koneksi) {
+    die("Koneksi database gagal: " . mysqli_connect_error());
+}
 ?>
